@@ -6,21 +6,99 @@ body {
     flex-wrap: wrap;
 }
 
+/* Header */
+
+.header, .hero {
+    background: #1F2937;
+}
+
 .header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px;
+    padding: 10px 150px;
 }
+
+.header p {
+    color: #F9FAF8;
+    font-size:24px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero */
 
 .hero {
     display: flex;
+    justify-content:space-between;
     align-items: center;
     gap: 100px;
-    padding: 60px;
+    padding: 50px 150px;
+    height: 350px;
 }
+
+.hero-box-one {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+    width: 450px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-box-two {
+    width: 500px;
+    height: 240px;
+    background: #95979a;
+}
+
+.hero-header {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.hero button {
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    background: #3882F6;
+    border:1px solid #3882F6;
+    color: #E5E7EB;
+    border-radius: 5px;
+}
+
+/* Third Row */
+
+.third-row {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 150px;
+    height: 350px;
+}
+
 .third-row h1{ 
     text-align: center;
+    
+
 }
 .sub-boxes {
     list-style-type: none;
@@ -28,46 +106,98 @@ body {
     padding: 0;
     display:flex;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 .box {
     width: 150px;
     height: 150px;
-    border: 5px solid blue;
+    border: 5px solid rgb(20, 116, 206);
+    border-radius: 25px;
 }
 
 .text {
     width: 150px;
     flex-wrap: wrap;
+    text-align:center;
 }
+
+/* Another row : The Main Quote Row */
 
 .main-quote {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 300px;
+    padding: 50px 150px;
+    background: #E5E7EB;
 }
+
+.quote-text {
+    width: 800px;
+    font-size: 36px;
+    font-style: italic; 
+    font-weight:100;
+    color:#1F2937;
+}
+
+.cite {
+    display:flex;
+    width:800px;
+    justify-content: flex-end;
+}
+
+.quote-author {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Call to Action Row */
 
 .call-to-action {
     display:flex;
     justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 50px 150px;
+    color: #F9FAF8;
 }
 
 .cta-box {
     width: 1000px;
     height: 150px;
-    border: 3px solid blue;
+    border: 3px solid #3882F6;
+    background: #3882F6;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    gap: 150px;
 }
 
 .cta-box button {
-    width: 100px;
-    height: 20px;
+    width: 125px;
+    height: 30px;
     flex-shrink: 0;
+    background: #3882F6;
+    border: 1px solid white;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
 }
+
+.cta-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cta-text {
+    margin: 0;
+}
+
+/* Footer */
 
 .footer {
     width: auto;
@@ -75,4 +205,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #1F2937;
+    color: #F9FAF8;
 }
